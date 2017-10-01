@@ -1,0 +1,6 @@
+<h1>Car Showroom</h1>
+<h2>Cars</h2>
+<ul>  
+  <li *ngFor="let car of cars" (click)="showSelectedCar(car);">{{car.model}}</li>
+</ul>
+<app-car-info [car]="selectedCar"></app-car-info>
